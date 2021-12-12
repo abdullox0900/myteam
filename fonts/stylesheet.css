@@ -1,4 +1,3 @@
-/* ======FONTS====== */
 @font-face {
     font-family: 'Livvic';
     src: url('Livvic-BoldItalic.woff2') format('woff2'),
@@ -44,71 +43,4 @@
     font-display: swap;
 }
 
-.header {
-    background-color: #014E56;
-}
-
-.navbar {
-    padding-top: 77px;
-    padding-bottom: 0px;
-}
-
-.navbar-brand {
-    margin-right: 0px;
-}
-
-.header__img {
-    width: 160px;
-    height: 40px;
-    transition: opacity 0.5s;
-}
-
-.header__img:hover {
-    opacity: 0.8;
-}
-
-.header__img:active {
-    opacity: 0.6;
-}
-
-.navbar-nav {
-    margin-left: 80px;
-}
-
-.nav-link {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    cursor: pointer;
-    color: #fff !important;
-    transition: opacity 0.5s;
-}
-
-.nav-link:hover {
-    opacity: 0.8;
-}
-
-.nav-link:active {
-    opacity: 0.6;
-}
-
-.header__btn {
-    padding: 10px 32px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #FFFFFF;
-    border-radius: 24px;
-    border: 2px solid #FFFFFF;
-    background-color: transparent;
-    transition: color 0.5s, background-color 0.6s;
-}
-
-.header__btn:hover {
-    color: #002529;
-    background-color: #fff;
-}
-
-/* ======HEADER-BURGER====== */
-.navbar-light .navbar-toggler {
-    border: none;
-}
+/* ======GENERAL====== */
