@@ -44,16 +44,25 @@
     font-display: swap;
 }
 
+/* ======GENERAL====== */
+.container-header {
+    max-width: 1150px;
+}
+
+/* ==================HEADER================== */
+
 .header {
     background-color: #014E56;
 }
 
 .navbar {
+    align-items: baseline;
     padding-top: 77px;
     padding-bottom: 0px;
 }
 
 .navbar-brand {
+    padding: 0;
     margin-right: 0px;
 }
 
@@ -76,6 +85,7 @@
 }
 
 .nav-link {
+    padding: 0px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -92,7 +102,9 @@
     opacity: 0.6;
 }
 
-.header__btn {
+/* ======BUTTON====== */
+
+.button {
     padding: 10px 32px;
     font-weight: 600;
     font-size: 18px;
@@ -103,12 +115,98 @@
     transition: color 0.5s, background-color 0.6s;
 }
 
-.header__btn:hover {
+.button:hover {
     color: #002529;
     background-color: #fff;
+}
+
+.button:active {
+    opacity: 0.6;
 }
 
 /* ======HEADER-BURGER====== */
 .navbar-light .navbar-toggler {
     border: none;
 }
+
+.offcanvas-bg {
+    background-color: #2C6269;
+}
+
+.header__offcanvas {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-toggler-header {
+    display: none;
+}
+
+/* ======RESPINSIV====== */
+@media only screen and (max-width: 768px) {
+
+    .header__img {
+        width: 128px;
+        height: 32px;
+    }
+
+    .navbar-nav {
+        margin-left: 48px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../img/burger.svg");
+    }
+
+    .navbar-toggler {
+        padding: 0px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .offcanvas {
+        width: 250px;
+        padding-top: 112px;
+        background-image: url(../img/offsed-oval.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .offcanvas .navbar-toggler-icon {
+        position: absolute;
+        top: 56px;
+        right: 25px;
+        background-image: url(../img/close.svg);
+        background-size: 18px;
+        background-position: top;
+    }
+
+    .offcanvas .header__offcanvas {
+        flex-direction: column;
+    }
+
+    .offcanvas .nav-item {
+        margin-bottom: 24px;
+    }
+
+    .navbar-toggler-header {
+        display: flex;
+        /* width: 18px; */
+        /* height: 17px; */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+    }
+}
+
+/* ==================FOOTER================== */
