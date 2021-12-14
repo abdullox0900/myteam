@@ -71,6 +71,7 @@ body {
 
 .header {
     padding-top: 77px;
+    padding-bottom: 120px;
     background-color: #014E56;
 }
 
@@ -190,6 +191,7 @@ body {
 @media only screen and (max-width: 768px) {
     .header {
         padding-top: 64px;
+        padding-bottom: 112px;
     }
 
     .header__img {
@@ -217,6 +219,7 @@ body {
 @media only screen and (max-width: 575px) {
     .header {
         padding-top: 48px;
+        padding-bottom: 80px;
     }
 
     .offcanvas {
@@ -283,6 +286,11 @@ body {
     font-weight: bold;
     font-size: 48px;
     line-height: 48px;
+}
+
+/* ======HERO-CONTACT====== */
+.hero-contact {
+    background-color: #014E56;
 }
 
 /* ======RESPONSIV-MAIN====== */
