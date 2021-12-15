@@ -219,6 +219,7 @@ body {
 .directors {
     background: #004047;
     position: relative;
+    padding-bottom: 140px;
 
 }
 
@@ -257,6 +258,32 @@ body {
     line-height: 25px;
     color: #FFFFFF;
     margin-bottom: 56px;
+}
+
+/* ABOUT CLIENTS */
+.clients {
+    background: #012F34;
+    padding-top: 140px;
+}
+
+.clients-heading {
+    font-family: 'Livvic';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 64px;
+}
+
+@media only screen and (min-width:768px){
+    .clients-img {
+        width: 103px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .clients-img {
+        width: 180px;
+    }
 }
 
 
