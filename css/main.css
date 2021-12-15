@@ -1,26 +1,19 @@
 /* ======FONTS====== */
 @font-face {
     font-family: 'Livvic';
-    src: url('Livvic-BoldItalic.woff2') format('woff2'),
-        url('Livvic-BoldItalic.woff') format('woff');
+    src: url('../Livvic-Bold.woff2') format('woff2'),
+        url('../Livvic-Bold.woff') format('woff'),
+        url('../Livvic-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Livvic';
-    src: url('Livvic-SemiBold.woff2') format('woff2'),
-        url('Livvic-SemiBold.woff') format('woff');
-    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Livvic';
-    src: url('Livvic-Regular.woff2') format('woff2'),
-        url('Livvic-Regular.woff') format('woff');
+    src: url('../Livvic-Regular.woff2') format('woff2'),
+        url('../Livvic-Regular.woff') format('woff'),
+        url('../Livvic-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -28,21 +21,35 @@
 
 @font-face {
     font-family: 'Livvic';
-    src: url('Livvic-Bold.woff2') format('woff2'),
-        url('Livvic-Bold.woff') format('woff');
-    font-weight: bold;
+    src: url('../Livvic-SemiBold.woff2') format('woff2'),
+        url('../Livvic-SemiBold.woff') format('woff'),
+        url('../Livvic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Livvic';
-    src: url('Livvic-MediumItalic.woff2') format('woff2'),
-        url('Livvic-MediumItalic.woff') format('woff');
+    src: url('../Livvic-BoldItalic.woff2') format('woff2'),
+        url('../Livvic-BoldItalic.woff') format('woff'),
+        url('../Livvic-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../Livvic-MediumItalic.woff2') format('woff2'),
+        url('../Livvic-MediumItalic.woff') format('woff'),
+        url('../Livvic-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
+
+
 
 /* ======GENERAL====== */
 
@@ -185,6 +192,348 @@ body {
 
 .navbar-toggler-header {
     display: none;
+}
+
+/* home-page */
+/* home-page */
+/* home-page */
+
+.hero-home {
+    background-color: #014e56;
+    background-image: url("../img/hero-left.svg"), url("../img/hero-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 35%, 85% 100%;
+    background-size: auto;
+}
+
+.hero-home__container {
+    padding: 129px 20px 250px;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.hero-home__heading {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 550px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.hero-home__heading-color {
+    color: #f67e7e;
+}
+
+.hero-home__reight {
+    width: 100%;
+    max-width: 445px;
+}
+
+.hero-home__line {
+    display: inline-block;
+    margin-bottom: 79px;
+    width: 100%;
+    max-width: 50px;
+    height: 4px;
+    background: #79c8c7;
+}
+
+.hero-home__desc {
+    width: 100%;
+    max-width: 445px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-home {
+        background-image: none, url("../img/hero-bottom.svg");
+        background-position: 0px 35%, 50% 100%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .hero-home__container {
+        padding: 80px 20px 200px;
+    }
+
+    .hero-home__heading {
+        width: 100%;
+        max-width: 300px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .hero-home__reight {
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .hero-home__desc {
+        width: 100%;
+        max-width: 327px;
+        font-size: 15px;
+    }
+}
+
+/* build */
+
+.build {
+    background: #012f34;
+    background-image: url("../img/build.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto;
+}
+
+.build__container {
+    padding: 140px 20px 162px;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.build__heading {
+    width: 100%;
+    max-width: 445px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.build__line {
+    width: 100%;
+    max-width: 50px;
+    height: 4px;
+    background-color: #f67e7e;
+    display: inline-block;
+}
+
+.build__list {
+    width: 100%;
+    max-width: 540px;
+}
+
+.build__list-title {
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #f67e7e;
+}
+
+.build__list-desc {
+    width: 100%;
+    max-width: 445px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+    .build {
+        background-position: 100% 0;
+    }
+
+    .build__container {
+        padding: 100px 20px 100px;
+    }
+
+    .build__heading {
+        width: 100%;
+        max-width: 445px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .build__list {
+        width: 100%;
+        max-width: 573px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .build__container {
+        padding: 64px 20px 64px;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .build__heading {
+        width: 100%;
+        max-width: 240px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .build__list {
+        width: 100%;
+        max-width: 327px;
+    }
+}
+
+/* companies */
+
+.companies {
+    background: #004047;
+    background-image: url("../img/companiy-left.svg"), url("../img/companiy-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%;
+    background-size: auto;
+}
+
+.companies__container {
+    padding: 140px 20px 140px;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.compaines__heading {
+    width: 100%;
+    max-width: 932px;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.compaines__color {
+    color: #79c8c7;
+}
+
+.compaines__list-item {
+    width: 100%;
+    max-width: 350px;
+}
+
+.companies__icon {
+    position: relative;
+    top: 20px;
+}
+
+.compaines__desc {
+    z-index: 100;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.compaines__title {
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #79c8c7;
+}
+
+@media only screen and (max-width:1090px) {
+
+    .companies__container {
+        padding: 120px 20px 120px;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .compaines__heading {
+        width: 100%;
+        max-width: 573px;
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .compaines__list {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        max-width: 573px;
+    }
+
+    .compaines__list-item {
+        width: 100%;
+        max-width: 573px;
+    }
+
+    .compaines__list-item + .compaines__list-item {
+        margin-top: 48px !important;
+    }
+}
+
+@media only screen and (max-width:610px) {
+
+    .companies__container {
+        padding: 100px 20px 100px;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .compaines__heading {
+        width: 100%;
+        max-width: 450px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .compaines__list {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .compaines__list-item {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .compaines__list-item + .compaines__list-item {
+        margin-top: 48px !important;
+    }
+}
+
+@media only screen and (max-width:470px) {
+
+    .companies__container {
+        padding: 140px 20px 164px;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .compaines__heading {
+        width: 100%;
+        max-width: 327px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .compaines__list {
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .compaines__list-item {
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .compaines__list-item + .compaines__list-item {
+        margin-top: 48px !important;
+    }
 }
 
 
