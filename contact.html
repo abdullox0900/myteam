@@ -52,18 +52,56 @@
 
         <!-- HERO-CONTACT -->
         <section class="hero-contact">
-            <div class="container-header container-fluid">
+            <div class="container-header container-fluid hero-contact-container">
                 <div class="hero-contact__left">
                     <h1 class="hero-contact__header">Contact</h1>
                     <p class="hero-contact__desc">Ask us about</p>
 
                     <ul class="hero-contact__list">
                         <li class="hero-contact__item">
-                            <img class="hero-contact__img" src="" alt="">
+                            <img class="hero-contact__img" src="./img/contact-icon-network.svg" alt="icon-network"
+                                width="72" height="72">
                             <p class="hero-contact__text">The quality of our talent network</p>
+                        </li>
+                        <li class="hero-contact__item">
+                            <img class="hero-contact__img" src="./img/contact-icon-software.svg" alt="icon-software"
+                                width="72" height="72">
+                            <p class="hero-contact__text">Usage & implementation of our software</p>
+                        </li>
+                        <li class="hero-contact__item">
+                            <img class="hero-contact__img" src="./img/contact-icon-innavation.svg"
+                                alt="contact-icon-innavation" width="72" height="72">
+                            <p class="hero-contact__text">How we help drive innovation</p>
                         </li>
                     </ul>
                 </div>
+                <form class="row g-1 hero-contact__form">
+                    <div class="col-12">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                        <div class="valid-feedback">
+                            This field is required
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Email Address">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Company Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Title">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="floatingTextarea" placeholder="Message"></textarea>
+                            <label for="floatingTextarea2">Message</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
             </div>
         </section>
 

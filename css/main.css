@@ -290,8 +290,108 @@ body {
 
 /* ======HERO-CONTACT====== */
 .hero-contact {
+    padding-bottom: 120px;
     background-color: #014E56;
 }
+
+.hero-contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-contact__header {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.hero-contact__desc {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+}
+
+.hero-contact__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-contact__item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-contact__item+.hero-contact__item {
+    margin-top: 8px;
+}
+
+.hero-contact__img {
+    width: 72px;
+    height: 72px;
+}
+
+.hero-contact__text {
+    margin: 0;
+    margin-left: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+/* ======HERO-CONTACT-FORM====== */
+
+.hero-contact__form {
+    max-width: 542px;
+}
+
+.form-control {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    font-family: Livvic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #79C8C7;
+    background-color: transparent;
+}
+
+.form-floating>label {
+    padding: 0px 0px 0px 14px;
+    font-family: Livvic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+}
+
+
 
 /* ======RESPONSIV-MAIN====== */
 /* ======READY====== */
