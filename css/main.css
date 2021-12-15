@@ -194,7 +194,7 @@ body {
 
 .hero {
     background: #014E56;
-    padding: 120px 0px;
+    padding-bottom: 120px;
 }
 
 .about-hero-heading {
@@ -204,15 +204,11 @@ body {
     line-height: 100px;
 }
 
-
-
 .dash {
-
- background: #F67E7E;
- width: 50px;
- height: 4px;
+    background: #F67E7E;
+    width: 50px;
+    height: 4px;
 }
-
 
 /* ABOUT DIRECTORS */
 
@@ -234,11 +230,26 @@ body {
 }
 
 .card {
-
     background: #012F34;
     margin-bottom: 52px;
     margin: 20px;
 }
+
+.card:hover .gallery__img-overlane {
+    opacity: 1;
+    height: 100%;
+}
+
+.card:hover .plus-about {
+    background-color: #79C8C7;
+}
+
+.card:hover .plus-icon {
+    z-index: 1;
+    transition: 0.5s ease-out;
+    transform: rotateZ(45deg);
+}
+
 .card--img {
     margin-top: 32px;
     margin-bottom: 16px;
@@ -260,6 +271,59 @@ body {
     margin-bottom: 56px;
 }
 
+.card-plus {
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.plus-about {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #F67E7E;
+}
+
+.gallery__img-overlane {
+    position: absolute;
+    padding: 35px 24px 63px 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    color: #ffffff;
+    border-radius: 0px;
+    background: #002529;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.gallery__img-overlane:hover {
+    opacity: 1;
+    height: 30%;
+}
+
+.gallery__header {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #79C8C7;
+}
+
+.gallery__desc {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.gallery-icon+.gallery-icon {
+    margin-left: 16px;
+}
+
 /* ABOUT CLIENTS */
 .clients {
     background: #012F34;
@@ -274,15 +338,26 @@ body {
     margin-bottom: 64px;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:992px) {
+    .clients-img {
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .hero {
+        padding-bottom: 112px;
+    }
+
     .clients-img {
         width: 103px;
     }
 }
 
-@media only screen and (min-width:992px){
-    .clients-img {
-        width: 180px;
+@media only screen and (max-width: 375px) {
+    .hero {
+        padding-bottom: 108px;
     }
 }
 
