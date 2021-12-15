@@ -187,6 +187,79 @@ body {
     display: none;
 }
 
+
+/* ABOUT PAGE */
+
+/* ABOUT HERO */
+
+.hero {
+    background: #014E56;
+    padding: 120px 0px;
+}
+
+.about-hero-heading {
+    font-family: 'Livvic';
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+}
+
+
+
+.dash {
+
+ background: #F67E7E;
+ width: 50px;
+ height: 4px;
+}
+
+
+/* ABOUT DIRECTORS */
+
+.directors {
+    background: #004047;
+    position: relative;
+
+}
+
+.directors-heading {
+    padding-top: 88px;
+    font-family: 'Livvic';
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.card {
+
+    background: #012F34;
+    margin-bottom: 52px;
+    margin: 20px;
+}
+.card--img {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.card-heading {
+    font-family: 'Livvic';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #79C8C7;
+}
+
+.card-desc {
+    font-family: 'Livvic';
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+
+
 /* ======RESPINSIV====== */
 @media only screen and (max-width: 768px) {
     .header {
