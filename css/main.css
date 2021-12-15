@@ -288,13 +288,7 @@ body {
     line-height: 48px;
 }
 
-/* ======HERO-CONTACT====== */
-.hero-contact {
-    background-color: #014E56;
-}
-
-/* ======RESPONSIV-MAIN====== */
-/* ======READY====== */
+/* ======READY-RESPONSIV====== */
 
 @media only screen and (max-width: 768px) {
     .container-ready {
@@ -328,6 +322,207 @@ body {
         max-width: 200px;
         margin-bottom: 24px;
         text-align: center;
+    }
+}
+
+/* ======HERO-CONTACT====== */
+.hero-contact {
+    position: relative;
+    padding-bottom: 120px;
+    background-image: url(../img/hero-contact-oval.svg), url("../img/hero-contact-0val2.svg");
+    background-position-x: -25px, 101%;
+    background-position-y: 0px, bottom;
+    background-repeat: no-repeat;
+    background-color: #014E56;
+}
+
+.hero-contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-contact__header {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.hero-contact__desc {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+}
+
+.hero-contact__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-contact__item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-contact__item+.hero-contact__item {
+    margin-top: 8px;
+}
+
+.hero-contact__img {
+    width: 72px;
+    height: 72px;
+}
+
+.hero-contact__text {
+    margin: 0;
+    margin-left: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+
+/* ======HERO-CONTACT-FORM====== */
+
+.hero-contact__form {
+    max-width: 542px;
+}
+
+.form-control {
+    padding: 0px 81px 17px 16px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    font-family: Livvic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #79C8C7;
+    background-color: transparent;
+}
+
+.form-floating>label {
+    padding: 0px 0px 0px 14px;
+    font-family: Livvic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+}
+
+.button-form {
+    color: #012F34;
+    background-color: #fff;
+}
+
+/* ======HERO-CONTACT-RESPONSIV====== */
+@media only screen and (max-width: 1010px) {
+
+    .hero-contact-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-contact__left {
+        margin-bottom: 64px;
+    }
+
+    .hero-contact__header {
+        text-align: center;
+    }
+
+    .hero-contact__desc {
+        text-align: center;
+    }
+
+    .form-control {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero-contact {
+        padding-bottom: 141px;
+    }
+
+    .hero-contact-container {
+        align-items: flex-start;
+    }
+
+    .hero-contact__left {
+        margin: 0px auto;
+        margin-bottom: 35px;
+    }
+
+    .hero-contact__form {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+
+    .hero-contact {
+        padding-bottom: 180px;
+    }
+
+    .hero-contact-container {
+        align-items: center;
+    }
+
+    .hero-contact__left {
+        margin-bottom: 35px;
+    }
+
+    .hero-contact__form {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .hero-contact {
+        padding-bottom: 88px;
+        background-image: none;
+        background-image: url(../img/hero-contact-0val2.svg);
+        background-position: right bottom -15%;
+    }
+
+    .hero-contact__header {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .hero-contact__text {
+        font-size: 16px;
     }
 }
 
